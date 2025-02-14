@@ -1,0 +1,122 @@
+h2, h4, h5, h6 {
+    font-family: "Nova Square", sans-serif;
+    color: black;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-family: "Nova Square", sans-serif;
+    color: black;
+}
+
+h1 {
+    color: white;
+    text-shadow: -1px 0 #00fb63, 0 1px #00fb63, 1px 0 #00fb63, 0 -1px #00fb63;
+    text-align: center;
+    font-size: 4rem;
+}
+
+label {
+    color: white;
+    font-size: 1.1rem;
+    font-family: "Oxanium", sans-serif;
+    margin: 0 10px;
+}
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+    background-color: black;
+}
+
+button {
+    font-family: "Oxanium", sans-serif;
+    color: black;
+    font-size: 1rem;
+    margin: 15px 0;
+}
+
+.selection-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.hidden {
+
+}
+
+#make-selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80px;
+    width: 300px;
+    border-color: #00fb63;
+    background-color: black;
+    text-shadow: -1px 0 #00fb63, 0 1px #00fb63, 1px 0 #00fb63, 0 -1px #00fb63;
+}
+
+.regular:hover {
+    background-color: #00fb63;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.random:hover {
+    background-color: #5fd6f6;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.secret-weapon:hover {
+    background-color:#f65f5f;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.submit:hover {
+    background-color: gray;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#password {
+
+}
+
+#submit-pw {
+    margin: 10px;
+
+}
+
+#secret-pw {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 0 10px;
+}
+/* may use #ff649c instead of the red for secret weapon */
+
+#results {
+
+}
+
+#user-choice {
+
+}
+
+#comp-choice {
+
+}
+
+#winner {
+
+}
+
+
+
