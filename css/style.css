@@ -20,7 +20,7 @@ label {
     color: white;
     font-size: 1.1rem;
     font-family: "Oxanium", sans-serif;
-    margin: 0 10px;
+    margin-left: 5%;
 }
 
 body {
@@ -43,7 +43,7 @@ button {
 }
 
 .buttons-container {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -51,6 +51,16 @@ button {
 
 .hidden {
 
+}
+
+#pwResult {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #00fb63;
+    background-color: black;
+    padding: 0.5rem;
 }
 
 #make-selection {
@@ -81,7 +91,7 @@ button {
 }
 
 .submit:hover {
-    background-color: gray;
+    background-color: #00fb63;
     transition: background-color 0.2s ease-in-out;
 }
 
@@ -90,15 +100,15 @@ button {
 }
 
 #submit-pw {
-    margin: 10px;
-
+    margin-right: 5%;
 }
 
 #secret-pw {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
-    margin: 0 10px 0 10px;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 /* may use #ff649c instead of the red for secret weapon */
 
@@ -117,6 +127,24 @@ button {
 #winner {
 
 }
+@media (max-width: 600px) {
+    #submit-pw {
+        margin: 0 auto;
+    }
 
+    #password, #pwResult {
+        margin-right: 0;
+        margin-left: 0;
+    }
 
+    label {
+        margin-left: 0;
+        text-align: center; /* Smaller font size for mobile */
+        width: 100%;
+    }
 
+    #secret-pw {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
