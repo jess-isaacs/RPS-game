@@ -1,3 +1,5 @@
+import { getUserChoice, getComputerChoice, determineWinner } from './gameLogic.js';
+
 const submitPw = () => {
     let pwInput = document.getElementById("password").value;
     const result = document.getElementById("pwResult");
@@ -47,3 +49,6 @@ document.getElementById("make-selection").addEventListener("click", () => {
 document.querySelector(".secret-weapon").addEventListener("click", () => {
     document.getElementById("secret-pw").style.display = "flex";
 });
+
+//getting into game logic:
+

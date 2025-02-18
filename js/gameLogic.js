@@ -1,3 +1,8 @@
+export const getUserChoice = (userInput) => { ... };
+export const getComputerChoice = () => { ... };
+export const determineWinner = (userChoice, computerChoice) => { ... };
+
+
 const getUserChoice = (userInput) => {
   userInput = userInput.toLowerCase();
   if (userInput === 'rock' || userInput === 'scissors' || userInput === 'paper' || userInput === 'bomb') {

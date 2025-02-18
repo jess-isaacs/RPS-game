@@ -9,7 +9,9 @@ A fresh interface for an old game: play against a computer by selecting rock, pa
 ![Rock Paper Scissors Game Screenshot](assets/images/RPS_Preview.png)
 
 ## 🛠️ Built With
-HTML, CSS, JavaScript (Vanilla JS, no frameworks)
+HTML5
+CSS3 (with Flexbox and Media Queries for responsiveness)
+JavaScript (ES6+ with modules)
 Hosted on GitHub Pages
 
 ## 🔧 How to Run Locally
