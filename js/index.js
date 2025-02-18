@@ -81,6 +81,10 @@ document.addEventListener("DOMContentLoaded", () => {
         handleUserChoice(userChoice);              
     });
 
+    function capitalizeWord(word) {
+        return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+    }    
+
     function handleUserChoice(choice) {
         let userChoice;
         if (choice === 'random') {
@@ -92,9 +96,9 @@ document.addEventListener("DOMContentLoaded", () => {
         const computerChoice = getComputerChoice();
         const winner = determineWinner(userChoice, computerChoice);
 
-        document.getElementById('user-choice').innerText = `You chose: ${userChoice}`;
-        document.getElementById('comp-choice').innerText = `Computer chose: ${computerChoice}`;
-        document.getElementById('winner').innerText = `Winner: ${winner}`;
+        document.getElementById('user-choice').innerText = `You chose: ${capitalizeWord(userChoice)}`;
+        document.getElementById('comp-choice').innerText = `Computer chose: ${capitalizeWord(computerChoice)}`;
+        document.getElementById('winner').innerText = `Winner: ${capitalizeWord(winner)}`;
     }
 });
 

@@ -49,6 +49,7 @@ button {
 
 .buttons-container {
     display: none;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -56,7 +57,6 @@ button {
 
 #rock-selection, #paper-selection, #scissors-selection, #random-selection {
     padding: 10px 20px;
-    border: 2px solid #00fb63;
     border-radius: 8px;
     cursor: pointer;
     font-size: 1.1rem;
@@ -101,12 +101,20 @@ button {
 
 .secret-weapon:hover {
     background-color:#f65f5f;
-    transition: background-color 0.2s ease-in-out;
+    transform: scale(1.05);
 }
 
 .submit:hover {
     background-color: #00fb63;
     transition: background-color 0.2s ease-in-out;
+}
+
+#secret-weapon {
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: transform 0.2s;
 }
 
 #password {
@@ -152,7 +160,6 @@ button {
     gap: 10px;
     flex-wrap: wrap;
 }
-/* may use #ff649c instead of the red for secret weapon */
 
 #results, #user-choice, #comp-choice {
     font-family: "Space Grotesk", sans-serif;
@@ -165,6 +172,12 @@ button {
 }
 
 @media (max-width: 600px) {
+
+    .buttons-container {
+        flex-direction: column;
+        gap: 8px;
+    }
+
     #submit-pw {
         margin: 0 auto;
     }

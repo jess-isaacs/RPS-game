@@ -24,7 +24,7 @@ export const getComputerChoice = () => {
 export const determineWinner = (userChoice, computerChoice) => {
 
   if (userChoice === 'bomb') {
-    return "user wins";
+    return "you";
   }
 
   if (userChoice === computerChoice) {
@@ -33,25 +33,25 @@ export const determineWinner = (userChoice, computerChoice) => {
 
   if (userChoice === 'rock') {
     if (computerChoice === 'scissors') {
-      return "user wins";
+      return "you";
     } else {
-      return "computer wins";
+      return "computer";
     }
   }
 
   if (userChoice === 'paper') {
     if (computerChoice === 'rock') {
-      return "user wins";
+      return "you";
     } else {
-      return "computer wins";
+      return "computer";
     }
   }
 
   if (userChoice === 'scissors') {
     if (computerChoice === 'paper') {
-      return "user wins";
+      return "you";
     } else {
-      return "computer wins";
+      return "computer";
     }
   }
 };
