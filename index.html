@@ -20,14 +20,14 @@
                 </section>
 
                 <section class="buttons-container">
-                     <button class="regular">Rock 🪨</button>
-                     <button class="regular">Paper 📄</button>
-                     <button class="regular">Scissors ✂️</button>
-                     <button class="random">Choose for Me 🎲</button>
+                     <button id="rock-selection" class="regular">Rock 🪨</button>
+                     <button id="paper-selection" class="regular">Paper 📄</button>
+                     <button id="scissors-selection" class="regular">Scissors ✂️</button>
+                     <button id="random-selection" class="random">Choose for Me 🎲</button>
                      <button class="secret-weapon">Secret Weapon ❔</button>
                 </section>
 
-                    <section id="secret-pw" class="hidden">
+                    <section id="secret-pw">
                       <label>What's the password?</label>
                       <input type="text" id="password">
                       <p id="pwResult"></p>
@@ -36,9 +36,9 @@
            
 
                 <section id="results">
-                    <div id="user-choice"></div>
-                    <div id="comp-choice"></div>
-                    <div id="winner"></div>
+                    <p id="user-choice"></p>
+                    <p id="comp-choice"></p>
+                    <h4 id="winner"></h4>
                 </section>
 
                    

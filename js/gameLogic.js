@@ -1,9 +1,4 @@
-export const getUserChoice = (userInput) => { ... };
-export const getComputerChoice = () => { ... };
-export const determineWinner = (userChoice, computerChoice) => { ... };
-
-
-const getUserChoice = (userInput) => {
+export const getUserChoice = (userInput) => {
   userInput = userInput.toLowerCase();
   if (userInput === 'rock' || userInput === 'scissors' || userInput === 'paper' || userInput === 'bomb') {
     return userInput;
@@ -12,7 +7,7 @@ const getUserChoice = (userInput) => {
   }
 };
 
-const getComputerChoice = () => {
+export const getComputerChoice = () => {
  let randomNum = Math.floor(Math.random() * 3);
 
  if (randomNum === 0) {
@@ -26,7 +21,7 @@ const getComputerChoice = () => {
  }
 };
 
-const determineWinner = (userChoice, computerChoice) => {
+export const determineWinner = (userChoice, computerChoice) => {
 
   if (userChoice === 'bomb') {
     return "user wins";
@@ -66,7 +61,7 @@ const determineWinner = (userChoice, computerChoice) => {
  // Store computer's choice
  // Now we're passing pre-stored values
 
-const playGame = () => {
+/* const playGame = () => {
   const userChoice = getUserChoice('Bomb');
   const computerChoice = getComputerChoice(); 
 
@@ -77,3 +72,4 @@ const playGame = () => {
 };
 
 playGame();
+*/
