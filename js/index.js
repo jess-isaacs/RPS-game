@@ -50,6 +50,11 @@ document.addEventListener("DOMContentLoaded", () => {
             pwResult.style.color = '#f6b55f'; 
             clearPasswordClasses();
             passwordInput.classList.add('password-almost');  
+        }  else if (pwInput === 'meow' || pwInput === 'meowmeow' || pwInput === 'meow meow' || pwInput === 'meowmeowmeow') {
+            result.innerText = 'Nope, try something with more spark 🧨';
+            pwResult.style.color = '#f6b55f'; 
+            clearPasswordClasses();
+            passwordInput.classList.add('password-almost');  
         } else {
             result.innerText = `Incorrect password. Don't ~blow~ this!`; 
             pwResult.style.color = '#f65f5f'; 
