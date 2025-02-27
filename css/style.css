@@ -55,6 +55,43 @@ button {
     gap: 10px;
 }
 
+.game-container {
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.tally-box h3 {
+    margin: 0; /* Removes default vertical spacing */
+    padding: 15px; /* Adjust if needed */
+}
+
+.tally-box {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    margin-top: 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #5fd6f6;
+    text-shadow: -1px 0 #5fd6f6, 0 1px #5fd6f6, 1px 0 #5fd6f6, 0 -1px #5fd6f6;
+    z-index: 10;
+}
+
+#user-wins {
+    text-shadow: -1px 0 #00fb63, 0 1px #00fb63, 1px 0 #00fb63, 0 -1px #00fb63;
+    font-weight: bold;
+}
+
+#computer-wins {
+    text-shadow: -1px 0 #f65f5f, 0 1px #f65f5f, 1px 0 #f65f5f, 0 -1px #f65f5f;
+    font-weight: bold;
+}
+
 #rock-selection, #paper-selection, #scissors-selection, #random-selection {
     padding: 10px 20px;
     border-radius: 8px;
@@ -85,6 +122,7 @@ button {
     height: 80px;
     width: 300px;
     border-color: #00fb63;
+    border-radius: 10px;
     background-color: black;
     text-shadow: -1px 0 #00fb63, 0 1px #00fb63, 1px 0 #00fb63, 0 -1px #00fb63;
 }
@@ -172,6 +210,15 @@ button {
 }
 
 @media (max-width: 600px) {
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 0px;
+    }
+
+    .selection-button-container{
+        margin: 5px;
+    }
 
     .buttons-container {
         flex-direction: column;

@@ -110,6 +110,46 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById('user-choice').innerText = `You chose: ${capitalizeWord(userChoice)}`;
         document.getElementById('comp-choice').innerText = `Computer chose: ${capitalizeWord(computerChoice)}`;
         document.getElementById('winner').innerText = `Winner: ${capitalizeWord(winner)}`;
+        
+       if (winner.toLowerCase() === "you" || winner.toLowerCase() === "computer" || winner.toLowerCase() === "tie") {
+        keepScore(winner);
+       }
     }
-});
 
+    let userWins = 0;
+    let computerWins = 0;
+
+    function keepScore(winner) {
+        
+        if (!winner){
+            return;
+        }
+
+        let tallyBox = document.querySelector(".tally-box");
+        
+       
+        if (!tallyBox) {
+            return;
+        }
+      
+        if (getComputedStyle(tallyBox).display === "none") {
+          tallyBox.style.display = "block";
+        }
+        
+       let userWinsDisplay = document.getElementById("user-wins");
+       let computerWinsDisplay = document.getElementById("computer-wins");
+            
+         if (winner.toLowerCase() === "you") { 
+          userWins += 1;
+         } else if (winner.toLowerCase() === "computer") {
+          computerWins += 1;
+        } else if (winner.toLowerCase() === "tie") {
+          userWins += 1;
+          computerWins += 1;
+        }
+        
+        userWinsDisplay.textContent = userWins;
+        computerWinsDisplay.textContent = computerWins;
+
+        }
+    });
