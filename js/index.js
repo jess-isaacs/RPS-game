@@ -45,8 +45,13 @@ document.addEventListener("DOMContentLoaded", () => {
             clearPasswordClasses();
             passwordInput.classList.add('password-correct');
             handleUserChoice('bomb');
-        } else if (pwInput === 'boom' || pwInput === 'dynamite' || pwInput === 'tnt' || pwInput === 'kaboom') {
+        } else if (pwInput === 'dynamite' || pwInput === 'tnt' || pwInput === 'blow up' || pwInput === 'blowup') {
             result.innerText = 'Close, but just missed the tick 🧨';
+            pwResult.style.color = '#f6b55f'; 
+            clearPasswordClasses();
+            passwordInput.classList.add('password-almost');  
+        } else if (pwInput === 'boom' || pwInput === 'kaboom' || pwInput === 'explode') {
+            result.innerText = 'Close, what makes that sound? 🧨';
             pwResult.style.color = '#f6b55f'; 
             clearPasswordClasses();
             passwordInput.classList.add('password-almost');  
