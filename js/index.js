@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
             passwordInput.classList.add('password-incorrect'); 
             return;
         } 
+
         pwInput = pwInput.trim().toLowerCase();
         if (pwInput === 'bomb') {
             result.innerText = 'Correct 💣💥';
@@ -54,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
             result.innerText = 'Close, what makes that sound? 🧨';
             pwResult.style.color = '#f6b55f'; 
             clearPasswordClasses();
-            passwordInput.classList.add('password-almost');  
+            passwordInput.classList.add('password-almost'); 
         }  else if (pwInput === 'meow' || pwInput === 'meowmeow' || pwInput === 'meow meow' || pwInput === 'meowmeowmeow') {
             result.innerText = 'Nope, try something with more spark 🧨';
             pwResult.style.color = '#f6b55f'; 
@@ -64,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
             result.innerText = `Incorrect password. Don't ~blow~ this!`; 
             pwResult.style.color = '#f65f5f'; 
             clearPasswordClasses();
-            passwordInput.classList.add('password-incorrect');              
+            passwordInput.classList.add('password-incorrect');  
         }
     };
 
